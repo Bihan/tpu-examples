@@ -29,7 +29,7 @@ def toy_model(index, lock):
 
     loss_fn = nn.MSELoss()
     optimizer = optim.SGD(model.parameters(), lr=.001)
-    model.train()
+    # model.train()
     for i in range(10):
         # Generate random inputs and outputs on the XLA device
         data, target = torch.randn((128, 128), device=device), torch.randn((128, 10), device=device)
