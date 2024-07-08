@@ -7,3 +7,6 @@ __pycache__/
 .env
 *.env
 .DS_Store
+acc_mac_sample.py
+acc_mac_train_eval.py
+tpu_toy_sample.py

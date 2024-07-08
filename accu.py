@@ -1,5 +1,3 @@
-import torch_xla.core.xla_model as xm
-import torch_xla.distributed.xla_multiprocessing as xmp
 import torch
 import torch.nn as nn
 import torch.optim as optim
