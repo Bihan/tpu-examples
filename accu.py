@@ -30,7 +30,6 @@ def main():
 
     accelerator = Accelerator()
     
-    torch.manual_seed(42)
     model = nn.Linear(128, 10)
 
     loss_fn = nn.MSELoss()
