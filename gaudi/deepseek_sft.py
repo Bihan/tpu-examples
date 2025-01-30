@@ -55,7 +55,7 @@ training_args = GaudiSFTConfig(
 if not hasattr(model.generation_config, 'attn_softmax_bf16'):
     model.generation_config.attn_softmax_bf16 = False  # or True, based on your requirements
 if not hasattr(model.generation_config, 'use_flash_attention'):
-    model.generation_config.use_flash_attention = False  # or True, based on your requirements
+    model.generation_config.use_flash_attention = True  # or True, based on your requirements
 if not hasattr(model.generation_config, 'flash_attention_recompute'):
     model.generation_config.flash_attention_recompute = False  # or True, based on your requirements
 if not hasattr(model.generation_config, 'flash_attention_causal_mask'):
