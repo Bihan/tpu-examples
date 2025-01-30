@@ -51,11 +51,9 @@ training_args = GaudiSFTConfig(
     push_to_hub=False,             # Set True if you want to push to the Hub
     hub_model_id="bihan/deepseek-llm-7b-sft-spider"  # Adjust if pushing to Hub
 )
-
-# Configure Flash Attention
-model.generation_config.use_flash_attention = True
-model.generation_config.flash_attention_recompute = True
-model.generation_config.flash_attention_causal_mask = True
+# Workaround
+if not hasattr(model.generation_config, 'attn_softmax_bf16'):
+    model.generation_config.attn_softmax_bf16 = False  # or True, based on your requirements
 
 # -------------------------------------------------------------------------
 # 3. Load and Preprocess the Spider Dataset
