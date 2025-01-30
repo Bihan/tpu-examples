@@ -19,7 +19,7 @@ gaudi_config.use_fused_clip_norm = True
 
 # 3. Initialize the GaudiSFTTrainer
 trainer = GaudiSFTTrainer(
-    model="facebook/opt-350m",
+    model="deepseek-ai/deepseek-llm-7b-base",
     gaudi_config=gaudi_config,
     train_dataset=dataset,
     args=training_args,
