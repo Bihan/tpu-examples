@@ -49,7 +49,7 @@ training_args = GaudiSFTConfig(
     save_steps=500,
     evaluation_strategy="epoch",
     push_to_hub=False,             # Set True if you want to push to the Hub
-    hub_model_id="bihan/deepseek-llm-7b-sft-spider"  # Adjust if pushing to Hub
+    hub_model_id="bihan/deepseek-llm-7b-sft-spider",  # Adjust if pushing to Hub
     use_flash_attention=True
 )
 
