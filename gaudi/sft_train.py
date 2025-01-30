@@ -14,6 +14,7 @@ trainer = GaudiSFTTrainer(
     "facebook/opt-350m",
     train_dataset=dataset,
     args=training_args,
+    dataset_text_field="text"
 )
 # 4. Print relevant info
 if hasattr(torch, 'hpu'):
