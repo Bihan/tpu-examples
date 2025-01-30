@@ -44,7 +44,7 @@ training_args = GaudiSFTConfig(
     num_train_epochs=1,            # Adjust based on your needs
     gradient_accumulation_steps=4,
     learning_rate=2e-5,
-    fp16=True,                     # or bf16=True (depending on your environment)
+    bf16=True,                     # fp16 not supported in habana
     logging_steps=10,
     save_steps=500,
     evaluation_strategy="epoch",
