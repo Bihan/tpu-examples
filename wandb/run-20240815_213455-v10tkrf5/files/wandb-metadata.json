@@ -1,0 +1,49 @@
+{
+    "os": "macOS-14.5-arm64-arm-64bit",
+    "python": "3.11.0",
+    "heartbeatAt": "2024-08-15T15:49:57.461886",
+    "startedAt": "2024-08-15T15:49:55.891333",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/bihan/Projects/dstack-bihan/tpu-examples/fine_tune_sft_mac.py",
+    "codePathLocal": "fine_tune_sft_mac.py",
+    "codePath": "fine_tune_sft_mac.py",
+    "git": {
+        "remote": "https://github.com/Bihan/tpu-examples.git",
+        "commit": "49556603f93b5d854c6491a1c9cf715c92953aa1"
+    },
+    "email": "bihan@Bihans-MacBook-Pro.local",
+    "root": "/Users/bihan/Projects/dstack-bihan/tpu-examples",
+    "host": "Bihans-MacBook-Pro.local",
+    "username": "bihan",
+    "executable": "/Users/bihan/Projects/dstack-bihan/tpu-examples/venv/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "cpu_freq": {
+        "current": 3504,
+        "min": 702,
+        "max": 3504
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3504,
+            "min": 702,
+            "max": 3504
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 460.4317207336426,
+            "used": 9.558208465576172
+        }
+    },
+    "gpuapple": {
+        "type": "Apple M2 Pro",
+        "vendor": "sppci_vendor_Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

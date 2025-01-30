@@ -3,6 +3,8 @@
 # pip install -e . -f https://storage.googleapis.com/libtpu-releases/index.html
 # Install TRL and PEFT for training (see later how they are used)
 # pip install trl peft
+# optimum-tpu# cp ../tpu-examples/tpu_sft.py custom/tpu_sft.py
+# export HF_TOKEN=<your token>
 from optimum.tpu import fsdp_v2
 from datasets import load_dataset
 from transformers import AutoTokenizer

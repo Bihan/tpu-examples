@@ -1,0 +1,224 @@
+2024-08-15 21:33:03,294 INFO    StreamThr :4189 [internal.py:wandb_internal():85] W&B internal server running at pid: 4189, started at: 2024-08-15 21:33:03.293517
+2024-08-15 21:33:03,295 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: status
+2024-08-15 21:33:03,300 INFO    WriterThread:4189 [datastore.py:open_for_write():87] open: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/run-vihq1z9o.wandb
+2024-08-15 21:33:03,301 DEBUG   SenderThread:4189 [sender.py:send():379] send: header
+2024-08-15 21:33:03,347 DEBUG   SenderThread:4189 [sender.py:send():379] send: run
+2024-08-15 21:33:04,189 INFO    SenderThread:4189 [dir_watcher.py:__init__():211] watching files in: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files
+2024-08-15 21:33:04,189 INFO    SenderThread:4189 [sender.py:_start_run_threads():1188] run started: vihq1z9o with start time 1723736883.295549
+2024-08-15 21:33:04,200 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: check_version
+2024-08-15 21:33:04,200 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: check_version
+2024-08-15 21:33:04,477 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: run_start
+2024-08-15 21:33:04,486 DEBUG   HandlerThread:4189 [system_info.py:__init__():26] System info init
+2024-08-15 21:33:04,486 DEBUG   HandlerThread:4189 [system_info.py:__init__():41] System info init done
+2024-08-15 21:33:04,486 INFO    HandlerThread:4189 [system_monitor.py:start():194] Starting system monitor
+2024-08-15 21:33:04,487 INFO    SystemMonitor:4189 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-08-15 21:33:04,487 INFO    HandlerThread:4189 [system_monitor.py:probe():214] Collecting system info
+2024-08-15 21:33:04,488 INFO    SystemMonitor:4189 [interfaces.py:start():188] Started cpu monitoring
+2024-08-15 21:33:04,492 INFO    SystemMonitor:4189 [interfaces.py:start():188] Started disk monitoring
+2024-08-15 21:33:04,494 INFO    SystemMonitor:4189 [interfaces.py:start():188] Started gpuapple monitoring
+2024-08-15 21:33:04,495 INFO    SystemMonitor:4189 [interfaces.py:start():188] Started memory monitoring
+2024-08-15 21:33:04,496 INFO    SystemMonitor:4189 [interfaces.py:start():188] Started network monitoring
+2024-08-15 21:33:04,778 DEBUG   HandlerThread:4189 [system_info.py:probe():152] Probing system
+2024-08-15 21:33:04,782 DEBUG   HandlerThread:4189 [system_info.py:_probe_git():137] Probing git
+2024-08-15 21:33:04,804 DEBUG   HandlerThread:4189 [system_info.py:_probe_git():145] Probing git done
+2024-08-15 21:33:04,804 DEBUG   HandlerThread:4189 [system_info.py:probe():200] Probing system done
+2024-08-15 21:33:04,804 DEBUG   HandlerThread:4189 [system_monitor.py:probe():223] {'os': 'macOS-14.5-arm64-arm-64bit', 'python': '3.11.0', 'heartbeatAt': '2024-08-15T15:48:04.778951', 'startedAt': '2024-08-15T15:48:03.285901', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': '/Users/bihan/Projects/dstack-bihan/tpu-examples/fine_tune_sft_mac.py', 'codePathLocal': 'fine_tune_sft_mac.py', 'codePath': 'fine_tune_sft_mac.py', 'git': {'remote': 'https://github.com/Bihan/tpu-examples.git', 'commit': '49556603f93b5d854c6491a1c9cf715c92953aa1'}, 'email': 'bihan@Bihans-MacBook-Pro.local', 'root': '/Users/bihan/Projects/dstack-bihan/tpu-examples', 'host': 'Bihans-MacBook-Pro.local', 'username': 'bihan', 'executable': '/Users/bihan/Projects/dstack-bihan/tpu-examples/venv/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'cpu_freq': {'current': 3504, 'min': 702, 'max': 3504}, 'cpu_freq_per_core': [{'current': 3504, 'min': 702, 'max': 3504}], 'disk': {'/': {'total': 460.4317207336426, 'used': 9.558208465576172}}, 'gpuapple': {'type': 'Apple M2 Pro', 'vendor': 'sppci_vendor_Apple'}, 'memory': {'total': 16.0}}
+2024-08-15 21:33:04,804 INFO    HandlerThread:4189 [system_monitor.py:probe():224] Finished collecting system info
+2024-08-15 21:33:04,804 INFO    HandlerThread:4189 [system_monitor.py:probe():227] Publishing system info
+2024-08-15 21:33:04,805 INFO    HandlerThread:4189 [system_monitor.py:probe():229] Finished publishing system info
+2024-08-15 21:33:04,807 DEBUG   SenderThread:4189 [sender.py:send():379] send: files
+2024-08-15 21:33:04,807 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-08-15 21:33:04,879 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: python_packages
+2024-08-15 21:33:04,879 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: python_packages
+2024-08-15 21:33:04,879 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:04,880 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: stop_status
+2024-08-15 21:33:04,880 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:04,880 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: stop_status
+2024-08-15 21:33:05,194 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/requirements.txt
+2024-08-15 21:33:05,194 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/wandb-metadata.json
+2024-08-15 21:33:05,427 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: log_artifact
+2024-08-15 21:33:05,449 DEBUG   SenderThread:4189 [sender.py:send():379] send: config
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: metric
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: metric
+2024-08-15 21:33:05,450 WARNING SenderThread:4189 [sender.py:send_metric():1405] Seen metric with glob (shouldn't happen)
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send():379] send: config
+2024-08-15 21:33:05,450 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: log_artifact
+2024-08-15 21:33:05,884 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:06,477 INFO    wandb-upload_0:4189 [upload_job.py:push():130] Uploaded file /var/folders/zd/6hcllb716hn1gnn518g_zj8r0000gn/T/tmphqatu5x0wandb/ml6pzz2i-wandb-metadata.json
+2024-08-15 21:33:06,889 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:07,894 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:07,940 INFO    wandb-upload_0:4189 [upload_job.py:push():88] Uploaded file /var/folders/zd/6hcllb716hn1gnn518g_zj8r0000gn/T/tmp00_1qt01/model_architecture.txt
+2024-08-15 21:33:08,900 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:09,307 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: partial_history
+2024-08-15 21:33:09,441 INFO    SenderThread:4189 [sender.py:send_request_log_artifact():1525] logged artifact model-vihq1z9o - {'id': 'QXJ0aWZhY3Q6MTE1MTU0NDc4NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNDQxMjcyNA==', 'latestArtifact': None}}
+2024-08-15 21:33:09,441 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 21:33:09,442 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:09,442 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,443 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,443 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,443 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,443 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,443 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,443 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,443 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,444 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,444 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,444 DEBUG   SenderThread:4189 [sender.py:send():379] send: metric
+2024-08-15 21:33:09,444 DEBUG   SenderThread:4189 [sender.py:send():379] send: history
+2024-08-15 21:33:09,444 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: summary_record
+2024-08-15 21:33:09,444 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,445 DEBUG   SenderThread:4189 [sender.py:send():379] send: exit
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:send_exit():586] handling exit code: 0
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:send_exit():588] handling runtime: 4
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:send_exit():594] send defer
+2024-08-15 21:33:09,445 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,445 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 0
+2024-08-15 21:33:09,445 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 1
+2024-08-15 21:33:09,445 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,445 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 1
+2024-08-15 21:33:09,445 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-08-15 21:33:09,445 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 2
+2024-08-15 21:33:09,445 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,445 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 2
+2024-08-15 21:33:09,446 INFO    HandlerThread:4189 [system_monitor.py:finish():203] Stopping system monitor
+2024-08-15 21:33:09,446 DEBUG   SystemMonitor:4189 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-08-15 21:33:09,446 DEBUG   SystemMonitor:4189 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-08-15 21:33:09,446 DEBUG   SystemMonitor:4189 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-08-15 21:33:09,446 INFO    HandlerThread:4189 [interfaces.py:finish():200] Joined cpu monitor
+2024-08-15 21:33:09,446 INFO    HandlerThread:4189 [interfaces.py:finish():200] Joined disk monitor
+2024-08-15 21:33:09,446 INFO    HandlerThread:4189 [interfaces.py:finish():200] Joined gpuapple monitor
+2024-08-15 21:33:09,447 INFO    HandlerThread:4189 [interfaces.py:finish():200] Joined memory monitor
+2024-08-15 21:33:09,447 INFO    HandlerThread:4189 [interfaces.py:finish():200] Joined network monitor
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 3
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send():379] send: telemetry
+2024-08-15 21:33:09,447 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send():379] send: stats
+2024-08-15 21:33:09,447 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 3
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 4
+2024-08-15 21:33:09,447 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,447 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 4
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-08-15 21:33:09,447 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 5
+2024-08-15 21:33:09,447 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,447 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 5
+2024-08-15 21:33:09,447 DEBUG   SenderThread:4189 [sender.py:send():379] send: summary
+2024-08-15 21:33:09,448 INFO    SenderThread:4189 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-08-15 21:33:09,448 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,448 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-08-15 21:33:09,448 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 6
+2024-08-15 21:33:09,448 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,448 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 6
+2024-08-15 21:33:09,448 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,448 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-08-15 21:33:09,450 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 21:33:09,832 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 7
+2024-08-15 21:33:09,832 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:09,832 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 7
+2024-08-15 21:33:09,832 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:09,832 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-08-15 21:33:10,216 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/config.yaml
+2024-08-15 21:33:10,217 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/wandb-summary.json
+2024-08-15 21:33:10,218 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_created():271] file/dir created: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/output.log
+2024-08-15 21:33:10,310 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:12,220 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/output.log
+2024-08-15 21:33:13,457 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 8
+2024-08-15 21:33:13,457 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:13,457 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:13,458 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 8
+2024-08-15 21:33:13,458 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:13,458 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-08-15 21:33:13,459 INFO    SenderThread:4189 [job_builder.py:build():440] Attempting to build job artifact
+2024-08-15 21:33:13,462 INFO    SenderThread:4189 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-08-15 21:33:13,466 INFO    SenderThread:4189 [job_builder.py:build():545] adding wandb-job metadata file
+2024-08-15 21:33:13,469 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 9
+2024-08-15 21:33:13,469 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:13,469 DEBUG   SenderThread:4189 [sender.py:send():379] send: artifact
+2024-08-15 21:33:13,469 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 9
+2024-08-15 21:33:14,227 INFO    Thread-12 :4189 [dir_watcher.py:_on_file_modified():288] file/dir modified: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/output.log
+2024-08-15 21:33:14,331 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:15,154 INFO    wandb-upload_0:4189 [upload_job.py:push():85] Skipped uploading /Users/bihan/Library/Application Support/wandb/artifacts/staging/tmpyaecg1o1
+2024-08-15 21:33:15,880 INFO    wandb-upload_1:4189 [upload_job.py:push():88] Uploaded file /var/folders/zd/6hcllb716hn1gnn518g_zj8r0000gn/T/tmpa2_28txm/wandb-job.json
+2024-08-15 21:33:18,106 INFO    SenderThread:4189 [sender.py:send_artifact():1537] sent artifact job-https___github.com_Bihan_tpu-examples.git_fine_tune_sft_mac.py - {'id': 'QXJ0aWZhY3Q6MTE1MTU0NDkwMg==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjQxNDQxMjE2OA==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTE1MTU0MjY1Mw==', 'versionIndex': 0}}}
+2024-08-15 21:33:18,107 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:18,107 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: status_report
+2024-08-15 21:33:18,107 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-08-15 21:33:18,108 INFO    SenderThread:4189 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-08-15 21:33:18,241 INFO    SenderThread:4189 [dir_watcher.py:finish():388] scan: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files
+2024-08-15 21:33:18,242 INFO    SenderThread:4189 [dir_watcher.py:finish():402] scan save: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/requirements.txt requirements.txt
+2024-08-15 21:33:18,242 INFO    SenderThread:4189 [dir_watcher.py:finish():402] scan save: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/output.log output.log
+2024-08-15 21:33:18,243 INFO    SenderThread:4189 [dir_watcher.py:finish():402] scan save: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/config.yaml config.yaml
+2024-08-15 21:33:18,244 INFO    SenderThread:4189 [dir_watcher.py:finish():402] scan save: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/wandb-summary.json wandb-summary.json
+2024-08-15 21:33:18,245 INFO    SenderThread:4189 [dir_watcher.py:finish():402] scan save: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/wandb-metadata.json wandb-metadata.json
+2024-08-15 21:33:18,245 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 10
+2024-08-15 21:33:18,246 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:18,247 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:18,247 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 10
+2024-08-15 21:33:18,247 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:18,247 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-08-15 21:33:18,247 INFO    SenderThread:4189 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-15 21:33:18,353 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:18,353 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:19,218 INFO    wandb-upload_1:4189 [upload_job.py:push():130] Uploaded file /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/output.log
+2024-08-15 21:33:19,268 INFO    wandb-upload_0:4189 [upload_job.py:push():130] Uploaded file /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/requirements.txt
+2024-08-15 21:33:19,358 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:19,359 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:19,491 INFO    wandb-upload_2:4189 [upload_job.py:push():130] Uploaded file /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/config.yaml
+2024-08-15 21:33:20,080 INFO    wandb-upload_3:4189 [upload_job.py:push():130] Uploaded file /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/files/wandb-summary.json
+2024-08-15 21:33:20,286 INFO    Thread-11 (_thread_body):4189 [sender.py:transition_state():614] send defer: 11
+2024-08-15 21:33:20,286 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:20,287 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 11
+2024-08-15 21:33:20,287 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:20,287 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-08-15 21:33:20,288 INFO    SenderThread:4189 [file_pusher.py:join():175] waiting for file pusher
+2024-08-15 21:33:20,289 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 12
+2024-08-15 21:33:20,289 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:20,289 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 12
+2024-08-15 21:33:20,289 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:20,289 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-08-15 21:33:20,289 INFO    SenderThread:4189 [file_stream.py:finish():601] file stream finish called
+2024-08-15 21:33:20,360 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:20,636 INFO    SenderThread:4189 [file_stream.py:finish():605] file stream finish is done
+2024-08-15 21:33:20,636 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 13
+2024-08-15 21:33:20,637 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:20,637 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:20,637 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 13
+2024-08-15 21:33:20,638 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:20,638 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-08-15 21:33:20,638 INFO    SenderThread:4189 [sender.py:transition_state():614] send defer: 14
+2024-08-15 21:33:20,638 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: defer
+2024-08-15 21:33:20,638 DEBUG   SenderThread:4189 [sender.py:send():379] send: final
+2024-08-15 21:33:20,638 INFO    HandlerThread:4189 [handler.py:handle_request_defer():184] handle defer: 14
+2024-08-15 21:33:20,639 DEBUG   SenderThread:4189 [sender.py:send():379] send: footer
+2024-08-15 21:33:20,639 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: defer
+2024-08-15 21:33:20,639 INFO    SenderThread:4189 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-08-15 21:33:20,639 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:20,640 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:20,640 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: server_info
+2024-08-15 21:33:20,640 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: server_info
+2024-08-15 21:33:20,642 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: poll_exit
+2024-08-15 21:33:20,642 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: get_summary
+2024-08-15 21:33:20,642 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: sampled_history
+2024-08-15 21:33:20,643 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: internal_messages
+2024-08-15 21:33:20,967 DEBUG   SenderThread:4189 [sender.py:send_request():406] send_request: poll_exit
+2024-08-15 21:33:20,968 INFO    MainThread:4189 [wandb_run.py:_footer_history_summary_info():4016] rendering history
+2024-08-15 21:33:20,968 INFO    MainThread:4189 [wandb_run.py:_footer_history_summary_info():4048] rendering summary
+2024-08-15 21:33:20,968 INFO    MainThread:4189 [wandb_run.py:_footer_sync_info():3975] logging synced files
+2024-08-15 21:33:20,969 DEBUG   HandlerThread:4189 [handler.py:handle_request():158] handle_request: shutdown
+2024-08-15 21:33:20,969 INFO    HandlerThread:4189 [handler.py:finish():882] shutting down handler
+2024-08-15 21:33:21,645 INFO    WriterThread:4189 [datastore.py:close():296] close: /Users/bihan/Projects/dstack-bihan/tpu-examples/wandb/run-20240815_213303-vihq1z9o/run-vihq1z9o.wandb
+2024-08-15 21:33:21,973 INFO    SenderThread:4189 [sender.py:finish():1615] shutting down sender
+2024-08-15 21:33:21,973 INFO    SenderThread:4189 [file_pusher.py:finish():169] shutting down file pusher
+2024-08-15 21:33:21,973 INFO    SenderThread:4189 [file_pusher.py:join():175] waiting for file pusher
