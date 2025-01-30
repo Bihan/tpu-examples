@@ -49,16 +49,13 @@ training_args = GaudiSFTConfig(
     save_steps=500,
     evaluation_strategy="epoch",
     push_to_hub=False,             # Set True if you want to push to the Hub
-    hub_model_id="bihan/deepseek-llm-7b-sft-spider",  # Adjust if pushing to Hub
-    use_flash_attention=True,      # Enable Flash Attention
-    flash_attention_recompute=False,  # Adjust based on your requirements
-    flash_attention_causal_mask=False  # Adjust based on your requirements
+    hub_model_id="bihan/deepseek-llm-7b-sft-spider"  # Adjust if pushing to Hub
 )
 
 # Configure Flash Attention
-model.generation_config.use_flash_attention = training_args.use_flash_attention
-model.generation_config.flash_attention_recompute = training_args.flash_attention_recompute
-model.generation_config.flash_attention_causal_mask = training_args.flash_attention_causal_mask
+model.generation_config.use_flash_attention = True
+model.generation_config.flash_attention_recompute = True
+model.generation_config.flash_attention_causal_mask = True
 
 # -------------------------------------------------------------------------
 # 3. Load and Preprocess the Spider Dataset
