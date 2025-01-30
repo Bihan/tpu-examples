@@ -19,10 +19,13 @@ training_args = GaudiSFTConfig(
     max_seq_length=512,
     output_dir="/tmp",
 )
-
+gaudi_config = GaudiConfig()
+gaudi_config.use_fused_adam = True
+gaudi_config.use_fused_clip_norm = True
 # 3. Initialize the GaudiSFTTrainer
 trainer = GaudiSFTTrainer(
     model="facebook/opt-350m",
+    gaudi_config=gaudi_config,
     train_dataset=dataset,
     args=training_args,
     dataset_text_field="text"
