@@ -18,7 +18,6 @@ training_args = GaudiSFTConfig(
     use_habana=True,
     max_seq_length=512,
     output_dir="/tmp",
-    hub_token=HF_TOKEN  # Pass the hub token from environment variable
 )
 
 # 3. Initialize the GaudiSFTTrainer
