@@ -44,7 +44,7 @@ training_args = GaudiSFTConfig(
     num_train_epochs=2,            # Adjust based on your needs
     gradient_accumulation_steps=2,
     learning_rate=1e-5,
-    gradient_clipping=1.0
+    gradient_clipping=1.0,
     lr_scheduler_type="cosine",
     warmup_ratio=0.03,
     bf16=True,                     # fp16 not supported in habana
@@ -124,3 +124,5 @@ trainer.save_model("./final_deepseek_sft_model")
 # -------------------------------------------------------------------------
 if training_args.push_to_hub:
     trainer.push_to_hub()
+
+#python gaudi_spawn.py --world_size 8 --use_deepspeed deepseek_sft.py
