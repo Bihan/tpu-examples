@@ -1,14 +1,15 @@
 from datasets import load_dataset
-from trl import SFTConfig, SFTTrainer
+from optimum.habana import GaudiConfig
+from optimum.habana.trl import GaudiSFTConfig, GaudiSFTTrainer
 import torch
 
 dataset = load_dataset("stanfordnlp/imdb", split="train")
 
-training_args = SFTConfig(
+training_args = GaudiSFTConfig(
     max_seq_length=512,
     output_dir="/tmp",
 )
-trainer = SFTTrainer(
+trainer = GaudiSFTTrainer(
     "facebook/opt-350m",
     train_dataset=dataset,
     args=training_args,
