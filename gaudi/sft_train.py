@@ -6,6 +6,7 @@ import torch
 dataset = load_dataset("stanfordnlp/imdb", split="train")
 
 training_args = GaudiSFTConfig(
+    use_habana=True,
     max_seq_length=512,
     output_dir="/tmp",
 )
