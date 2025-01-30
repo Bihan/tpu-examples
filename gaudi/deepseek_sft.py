@@ -19,7 +19,7 @@ tokenizer = AutoTokenizer.from_pretrained(model_name)
 # Load the base model with bfloat16 precision (works well on Gaudi)
 model = AutoModelForCausalLM.from_pretrained(
     model_name,
-    torch_dtype=torch.bfloat16  # or torch.float32 if BF16 is not desired
+    torch_dtype=torch.bfloat16
 )
 
 # Optionally configure generation settings (e.g., pad_token_id)
@@ -58,7 +58,7 @@ training_args = GaudiSFTConfig(
 if not hasattr(model.generation_config, 'attn_softmax_bf16'):
     model.generation_config.attn_softmax_bf16 = False  # or True, based on your requirements
 if not hasattr(model.generation_config, 'use_flash_attention'):
-    model.generation_config.use_flash_attention = False  # or True, based on your requirements
+    model.generation_config.use_flash_attention = True  # or True, based on your requirements
 if not hasattr(model.generation_config, 'flash_attention_recompute'):
     model.generation_config.flash_attention_recompute = False  # or True, based on your requirements
 if not hasattr(model.generation_config, 'flash_attention_causal_mask'):
