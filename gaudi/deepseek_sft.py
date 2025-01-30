@@ -54,7 +54,8 @@ training_args = GaudiSFTConfig(
 # Workaround
 if not hasattr(model.generation_config, 'attn_softmax_bf16'):
     model.generation_config.attn_softmax_bf16 = False  # or True, based on your requirements
-
+if not hasattr(model.generation_config, 'use_flash_attention'):
+    model.generation_config.use_flash_attention = False  # or True, based on your requirements
 # -------------------------------------------------------------------------
 # 3. Load and Preprocess the Spider Dataset
 # -------------------------------------------------------------------------
