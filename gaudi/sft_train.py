@@ -22,7 +22,7 @@ training_args = GaudiSFTConfig(
 
 # 3. Initialize the GaudiSFTTrainer
 trainer = GaudiSFTTrainer(
-    "facebook/opt-350m",
+    model="facebook/opt-350m",
     train_dataset=dataset,
     args=training_args,
     dataset_text_field="text"
