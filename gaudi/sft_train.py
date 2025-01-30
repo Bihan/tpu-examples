@@ -14,8 +14,11 @@ trainer = SFTTrainer(
     args=training_args,
 )
 # 4. Print relevant info
-print("Is GPU available? ", torch.cuda.is_available())
-print("Trainer device:", trainer.args.device)
-print("Model device:", trainer.model.device)
+if hasattr(torch, 'hpu'):
+    print("Is HPU available? ", torch.hpu.is_available())
+    if torch.hpu.is_available():
+        print("HPU device count:", torch.hpu.device_count())
+else:
+    print("HPU not supported in this PyTorch installation.")
 
 trainer.train()
