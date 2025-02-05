@@ -14,5 +14,7 @@ trainer = GRPOTrainer(
     reward_funcs=reward_len,
     args=training_args,
     train_dataset=dataset,
+    per_device_train_batch_size=1,
+    bf16=True,
 )
 trainer.train()
